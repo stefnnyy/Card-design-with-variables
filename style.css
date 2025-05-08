@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playwrite+CU:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    /* COLOR VARIABLES */
+    --backgroundColor :#F9FAFB;
+    --headingColor :#1D2939;
+    --paragraphColor :#475467;
+    --borderColor :#F2F4F7;
+    --buttonColor: #53389E;
+    --buttontextColor: white;
+    --bgColor: white;
+
+
+    /* TEXT VARIABLES */
+    --headingText: 1.5rem;
+    --paragraphText: 1.125rem;
+    --buttonText: 1.125rem;
+    --bigText: 4rem;
+
+    /* SPACE VARIABLES */
+    --bigPadding: 1rem;
+    --smallPadding: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        /* COLOR VARIABLES */
+        --backgroundColor :#53389E;
+        --headingColor :#F2F4F7;
+        --paragraphColor :#D0D5DD;
+        --borderColor :#9E77ED;
+        --buttonColor: #FCFAFF;
+        --buttontextColor: #53389E;
+        --bgColor: #101828;
+    }
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bgColor);
+}
+.main-card{
+    width: 464px;
+    height: auto;
+    margin: 3rem auto;
+    background-color: var(--backgroundColor);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--borderColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+
+.top-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.05rem;
+}
+
+.premium-container{
+    width: fit-content;
+    height: auto;
+}
+
+.premium-container p{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--headingColor);
+
+}
+
+.price-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    gap: 0.25rem;
+}
+
+.price-container h1{
+    font-size: 3.25rem;
+    font-weight: 400;
+    color:var(--headingColor);
+}
+
+.text-container{
+    width: 100%;
+    height: auto;
+}
+
+.text-container p{
+    color: var(--paragraphColor);
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.price-container p{
+    color: var(--paragraphColor);
+    font-weight: 500;
+}
+
+.bottom-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+.image-container{
+    width: 100%;
+    height: auto;
+    background-image: url("./images/fatih-kgqu_qs3B78-unsplash.jpg");
+    padding: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    background-position: center;
+}
+
+.buttons-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.50rem;
+}
+
+.fingerprint{
+    background-color: var(--buttonColor);
+    width: fit-content;
+    height: auto;
+    padding: 1.2rem;
+    color: var(--buttontextColor);
+    border-radius: 0.75rem;
+}
+
+button{
+    background-color: var(--buttonColor);
+    color: var(--buttontextColor);
+    width: 100%;
+    padding: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
